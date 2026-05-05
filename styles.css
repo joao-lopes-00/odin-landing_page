@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center; 
 }
 
 .hero .main-container {
@@ -26,12 +27,16 @@ body {
 
 .hero .main-container .left, .right {
     width: 400px;
-    height: 250px;
+    flex-direction: column;
+    display: flex;
+    gap: 16px;
     flex-shrink: 0;
+    padding: 10px;
 }
 
 .hero .main-container .right {
     font-size: 18px;
+        height: 250px;
     color: #E5E7EB;
     background-color: rgb(61, 61, 82);
     display: flex;
@@ -63,16 +68,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* tenho de mudar algo aqui */
+    align-items: center; /*tenho de mudar algo aqui*/
     text-align: center; 
-
+    padding-top: 36px;
+    gap: 36px;
 }
 
 .middle .information-text{
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
-    padding: 36px;
+   
     width: 500px;
     flex-shrink: 0;
 }
@@ -80,7 +86,9 @@ body {
 .middle .card-section {
     display: flex;
     gap: 36px;
+    padding-bottom: 36px;
     
+
 }
 
 .middle .card-element {
@@ -107,10 +115,40 @@ body {
 
 .middle .quote-section {
     display: flex;
-    background-color: black;
-    margin: 0;
-    padding: 0;
+    align-self: stretch;
+    justify-content: center;
+    background-color: #E5E7EB;
+    flex-direction: column;
+    text-align: left;
+    padding: 200px;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+    font-style: italic;
 }
+
+.middle .quote-section .author {
+    font-style: normal;
+    text-align: right;
+    font-weight: 900;
+}
+
+.middle .signup-section {
+    display: flex;
+    align-self: center;
+    /* padding: 100px; */
+    margin: 100px;
+    background-color: blue;
+
+}
+
+
+/* 
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+} */
 
 button {
     background-color: #3882F6;
